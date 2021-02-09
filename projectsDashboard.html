@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Prosperity Project 2020</title>
+<!-- <link rel="icon" href="Images/logo.jpg" /> -->
+<link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./JAVASCRIPT-FILES/imggallery/css/jquery.gridder.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lg-fb-comment-box.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.css"  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lg-transitions.css">
+</head>
+</html>
+
+<main>
+    <!--Header for all other pages excluding the index & blog pages-->
+    <header class="defaultHeader">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="col-md" style="padding:5px;">
+            <img src="images/bys.png" width="70px;" style="float:left;"/>
+            <div style="padding:5px;">
+              <h6 style="line-height:;">GOVERNMENT OF BAYELSA STATE OF NIGERIA</h6>
+              <h6 class="display-5" style="font-size:14px;color:red;line-height:10px;font-weight:bold;line-height:10px;">
+              Prosperity<span class="a">Project</span><span class="b">2020</span></h6>
+            </div>  
+          </div>
+          <div class="col-md-3" style="text-align:center;">
+            <h6 style="text-align:center;">HIS EXCELLENCY, SEN. DOUYE DIRI</h6>
+            <button class="signOutBtn">Sign Out</button>
+          </div>
+          
+          
+        </div>
+      </nav>
+  </header>
+  <!--End of header-->
+
+    <body>
+
+      <!-- gallery -->
+<!-- <div class="row">
+  <div class="column">
+      <img src="./images/publicView.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="100%" height="100%">
+  </div>
+
+  <div class="column">
+    <img src="./images/finance.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="100%" height="100%">
+</div>
+
+</div>
+
+The Modal/Lightbox -->
+<!-- <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+      <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="./images/projectImg.jpg" style="width:70%;height:50%;"/>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="./images/finance.jpg" style="width:70%;height:50%;"/>
+    </div> -->
+
+      <!-- Next/previous controls -->
+      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+      <!-- Caption text -->
+      <!-- <div class="caption-container">
+          <p id="caption"></p>
+      </div> -->
+
+      <!-- Thumbnail image controls -->
+      <!-- <div class="column">
+        <div class="row">
+          <div class="col-md">
+            <img class="demo" src="./images/publicView.jpg" onclick="currentSlide(1)" alt="Nature" style="width:40%">
+          </div>
+          <div class="col-md">
+            <img class="demo" src="./images/finance.jpg" onclick="currentSlide(1)" alt="Nature" style="width:40%">
+          </div>
+        </div>
+          
+      </div>
+
+  </div>
+</div> -->
+<!--end of gallery-->
+      </div>
+
+        <div class="container-fluid" style="background-color:red;">
+            <div class="row" id="welcomeDiv">
+                <div class="col-md-3" style="padding:px;color:white;">
+                  <img src="images/diri.jpg" class="img-fluid" alt="Responsive image" style="width:350px;margin-left:-20px;">
+                    
+                    <div class="btnDiv" id="leftDiv">
+                     <button id="btn1" class="allBtn"></button>
+                     <button id="btn2" class="allBtn"></button>  
+                     <button id="btn3" class="allBtn"></button> 
+                     <button id="btn4" class="allBtn"></button>
+                     <button id="btn5" class="allBtn"></button>
+                     <button id="btn6" class="allBtn"></button> 
+                     <button id="btn7" class="allBtn"></button> 
+                    </div>
+                    
+                    
+
+                </div>
+                
+                <div class="col-md" style="background-color:red;text-align:center;color:white;padding:10px;height:400px;overflow:auto;">
+                  <div class="attorneyDiv" id="attorneyDiv" style="display:block;">
+                    <div class="container">
+                      
+              </div>
+                    <div class="ministryNameDiv">
+                      <h1 class="display-5" style="font-weight:bolder;" id="minName"></h1>
+                    </div>
+                    <div class="ministryContentDiv">
+                      <ul id="projcont"> 
+                        
+                      </ul>
+                    </div>
+                  </div>  
+                 
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="container-fluid" style="padding:px;background-color">
+        <div class="row">
+          <div class="col-md-4">
+           
+          </div>
+        </div>
+          
+            
+        </div>
+
+        
+          <!-- <div id="mod" class="modal"><span class="close cursor" onclick="closeModal()">&times;</span> 
+            <div class="modal-content">
+            <div class="mySlides">
+              <img src="" width="200" class="demo" onclick="openModal('mod1');currentSlide(1)" class="hover-shadow" width="100%" height="100%"/>
+                   <div class="numbertext"></div>
+                    
+                </div>
+
+               Next/previous controls -->
+                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+                <!-- Caption text -->
+                <!-- <div class="caption-container">
+                    <p id="caption"></p>
+                </div> -->
+
+                <!-- Thumbnail image controls -->
+                <!-- <div class="column">
+                  <div class="row">
+                    <div class="col-md" id="th">
+                      
+                    </div>
+                    </div>
+                </div>
+            </div> -->
+          <!-- </div> -->
+          
+        
+          
+        <script src="./bootstrap/js/jquery-3.3.1.js"></script>
+        <script src="./JAVASCRIPT-FILES/imggallery/js/jquery.gridder.min.js"></script>
+        <script src="./JAVASCRIPT-FILES/imggallery/imggallery.js"></script>
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+        <script src="./JAVASCRIPT-FILES/getMinistryName.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+        <script src="./JAVASCRIPT-FILES/lightgallery-all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+        <script src="./JAVASCRIPT-FILES/helperfuncs.js"></script>
+        <script src="./JAVASCRIPT-FILES/getProjects.js"></script>
+      
+
+
+
+    </body>
+
+    <footer>
+      <nav >
+        <div class="container-fluid" style="margin-top:21px;">
+          <div class="row">
+            <div class="col-md">
+              <h6 style="text-align:left;"> 
+                <small class="d-block mb-3 text-muted">&nbsp; &copy; 
+                    Copyright Prosperity Project 2020 (Bayelsa State) - All Rights Reserved<br >&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boungbai Computers Netware Ltd - Consultant</small>
+                </h6>
+            </div>
+  
+            <div class="col-md-3" style="float:right;">
+              <img src="images/bys.png" width="40px;" style="float:left;"/>
+                <div style="padding:5px;">
+                  <h6 class="display-5" style="font-size:14px;color:red;line-height:10px;font-weight:bold;line-height:10px;">
+                  PROSPERITY<span class="a">PROJECT</span><span class="b">2020</span></h6>
+                </div>  
+           
+              </div>
+            </div>
+          </div>
+              
+          <div class="container-fluid" style="background-color:red;height:8px;"></div>
+          <div class="container-fluid" style="background-color:blue;height:8px;"></div>
+          <div class="container-fluid" style="background-color:green;height:8px;"></div>
+      </nav>
+      
+    </footer>     
+</main>
